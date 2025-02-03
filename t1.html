@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Xiaomi Redmi Note 14 Pro 8/256GB Midnight Black</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+<body>
+  <!-- Шапка сайта (копируем из index.php или другого шаблона) -->
+  <header>
+    <div class="logo">
+      <h1>Мой Магазин</h1>
+    </div>
+    <nav>
+      <a href="index.php">Главная</a>
+      <a href="#">Каталог</a>
+      <!-- Ссылки для модальных окон "О нас" и "Контакты" -->
+      <a id="about-link">О нас</a>
+      <a id="contacts-link">Контакты</a>
+    </nav>
+    <!-- Кнопки регистрации и авторизации -->
+    <div class="auth-buttons">
+      <a id="registration-link">Регистрация</a>
+      <a id="authorization-link">Авторизация</a>
+    </div>
+  </header>
+
+  <!-- Модальные окна (О нас, Контакты, Регистрация, Авторизация) -->
+  <!-- ... Здесь оставляем код модальных окон, как в предыдущем примере ... -->
+  <div id="about-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" data-modal="about-modal">&times;</span>
+      <h2>О нас</h2>
+      <p>
+        Добро пожаловать в наш интернет-магазин! Мы предлагаем широкий ассортимент товаров по привлекательным ценам. Наша цель – обеспечить высокое качество обслуживания и удовлетворить потребности наших клиентов. Спасибо, что выбрали нас!
+      </p>
+    </div>
+  </div>
+
+  <div id="contacts-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" data-modal="contacts-modal">&times;</span>
+      <h2>Контакты</h2>
+      <p>
+        Вы можете связаться с нами по следующим контактам:
+      </p>
+      <ul>
+        <li>Телефон: +38 (068) 543-78-93</li>
+        <li>Email: info@gmail.com</li>
+        <li>Адрес: ул. Примерная, д. 1, Одесса, Украина</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="registration-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" data-modal="registration-modal">&times;</span>
+      <h2>Регистрация</h2>
+      <form class="modal-form">
+        <label for="reg-name">Имя:</label>
+        <input type="text" id="reg-name" name="reg-name" placeholder="Ваше имя" required>
+        
+        <label for="reg-email">Email:</label>
+        <input type="email" id="reg-email" name="reg-email" placeholder="Ваш email" required>
+        
+        <label for="reg-password">Пароль:</label>
+        <input type="password" id="reg-password" name="reg-password" placeholder="Ваш пароль" required>
+        
+        <button type="submit">Зарегистрироваться</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="authorization-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" data-modal="authorization-modal">&times;</span>
+      <h2>Авторизация</h2>
+      <form class="modal-form">
+        <label for="auth-email">Email:</label>
+        <input type="email" id="auth-email" name="auth-email" placeholder="Ваш email" required>
+        
+        <label for="auth-password">Пароль:</label>
+        <input type="password" id="auth-password" name="auth-password" placeholder="Ваш пароль" required>
+        
+        <button type="submit">Войти</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Основной контент с подробным описанием товара -->
+  <main class="product-details">
+    <h2>Xiaomi Redmi Note 14 Pro 8/256GB Midnight Black</h2>
+    <img src="jpg/505511671.jpg" alt="Xiaomi Redmi Note 14 Pro 8/256GB Midnight Black">
+    <p><strong>Цена:</strong> 12 999 грн.</p>
+    
+    <!-- Блок с вкладками -->
+    <div class="tabs">
+      <button class="tablink active" data-tab="overview">Всё о товаре</button>
+      <button class="tablink" data-tab="characteristics">Характеристики</button>
+      <button class="tablink" data-tab="reviews">Отзывы</button>
+    </div>
+    
+    <!-- Содержимое вкладки "Всё о товаре" -->
+    <div class="tab-content active" id="overview">
+      <p>
+        Здесь представлено общее описание товара. Xiaomi Redmi Note 14 Pro – современный смартфон с ярким AMOLED дисплеем, производительным процессором и стильным дизайном. Он идеально подходит для игр, просмотра видео и работы в интернете.
+      </p>
+    </div>
+    
+    <!-- Содержимое вкладки "Характеристики" -->
+    <div class="tab-content" id="characteristics">
+      <p><strong>Модель:</strong> Xiaomi Redmi Note 14 Pro 8/256GB Midnight Black (1123272)</p>
+      <h4>Серия</h4>
+      <p>Redmi Note 14</p>
+      <h4>Стандарт связи/интернет</h4>
+      <p>2G (GPRS/EDGE), 3G (WCDMA/UMTS/HSPA), 4G (LTE)</p>
+      <h4>Дисплей</h4>
+      <ul>
+        <li>Диагональ экрана: 6.67"</li>
+        <li>Разрешение дисплея: 2400 x 1080</li>
+        <li>Тип матрицы: AMOLED</li>
+        <li>Частота обновления экрана: 120 Гц</li>
+        <li>Материал экрана: Стекло (Corning Gorilla Glass Victus 2)</li>
+      </ul>
+      <h4>SIM-карты</h4>
+      <ul>
+        <li>Количество SIM-карт: 2</li>
+        <li>Формат SIM-карты: Nano-SIM</li>
+      </ul>
+      <h4>Память</h4>
+      <ul>
+        <li>Оперативная память: 8 ГБ</li>
+        <li>Встроенная память: 256 ГБ</li>
+        <li>Формат поддерживаемых карт памяти: MicroSD</li>
+        <li>Максимальный объем поддерживаемой карты памяти: 1 ТБ</li>
+        <li>Комбинированный слот: Да</li>
+      </ul>
+      <h4>Операционная система</h4>
+      <p>Android</p>
+      <h4>Фронтальная камера</h4>
+      <ul>
+        <li>Количество мегапикселей: 32 Мп</li>
+        <li>Особенности: Одинарная, размещена в вырезе</li>
+      </ul>
+      <h4>Процессор</h4>
+      <ul>
+        <li>Название: MediaTek Helio G100 Ultra</li>
+        <li>Тип ядра: Cortex-A76 (64bit) + Cortex-A55 (64bit)</li>
+        <li>Видеоядро: ARM Mali-G57 MC2</li>
+        <li>Количество ядер: 2+6</li>
+        <li>Серия: MediaTek Helio G Series</li>
+        <li>Частота: 2.2 ГГц + 2.0 ГГц</li>
+      </ul>
+      <h4>Основная камера</h4>
+      <ul>
+        <li>Мегапиксели: 200 Мп + 8 Мп + 2 Мп</li>
+        <li>Особенности: автофокус, вспышка</li>
+        <li>Количество камер: 3</li>
+      </ul>
+      <h4>Питание</h4>
+      <p>Емкость аккумулятора: 5500 мА*ч</p>
+      <h4>Разъемы</h4>
+      <p>3.5 мм (mini-Jack), USB Type-C</p>
+      <h4>Навигация</h4>
+      <p>BDS, GPS, Galileo, ГЛОНАСС</p>
+      <h4>Размеры</h4>
+      <ul>
+        <li>Вес: 180 г</li>
+        <li>Ширина: 74.92 мм</li>
+        <li>Высота: 162.16 мм</li>
+        <li>Глубина: 8.24 мм</li>
+      </ul>
+      <h4>Дополнительно</h4>
+      <ul>
+        <li>Безопасность: разблокировка по лицу, сканер отпечатков пальцев на экране</li>
+        <li>Степень пыле-/влагозащиты: IP64</li>
+        <li>Датчики: акселерометр, гироскоп, датчик освещения, датчик приближения</li>
+      </ul>
+      <h4>Беспроводные технологии</h4>
+      <ul>
+        <li>Bluetooth 5.3</li>
+        <li>NFC</li>
+        <li>Wi-Fi</li>
+      </ul>
+      <h4>Оснащение</h4>
+      <ul>
+        <li>Быстрая зарядка</li>
+        <li>Слот для карты памяти</li>
+        <li>Форм-фактор: Моноблок</li>
+        <li>Особенности корпуса: безрамочный дисплей</li>
+      </ul>
+      <h4>Цвет</h4>
+      <p>Midnight Black</p>
+      <h4>Производство и гарантия</h4>
+      <ul>
+        <li>Страна регистрации бренда: Китай</li>
+        <li>Гарантия: 12 месяцев</li>
+        <li>Страна-производитель: Китай</li>
+        <li>EAN: 001012219121</li>
+      </ul>
+    </div>
+    
+    <!-- Содержимое вкладки "Отзывы" -->
+    <div class="tab-content" id="reviews">
+      <p>Пока отзывов нет.</p>
+      <!-- Здесь можно добавить форму для оставления отзыва или список отзывов -->
+    </div>
+  </main>
+
+  <!-- Подвал сайта -->
+  <footer>
+    <p>&copy; 2025</p>
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
